@@ -1,0 +1,61 @@
+#regblock{
+  background: #FFFFFF;
+  box-shadow:2px 2px 5px -2px;
+  border-radius: 7px;
+  position:relative;
+}
+body{
+  background: #FEE0FF;
+  padding: 0;
+  margin: 0;
+}
+#back{
+  position:fixed;
+  left:0;
+  top:0;
+  z-index:1;
+  width:100%;
+  height: 100px;
+  background:#C446C8;
+  border-bottom: 3px solid #98309C;
+}
+h3{
+  text-align: center;
+  margin:0
+}
+
+#content{
+  position: absolute;
+  left: 5%;
+  width:90%;
+  top:110px;
+}
+#blockcontent{
+  position: static;
+  width: 100%;
+  bottom: 100%;
+}
+#textfields{
+  position:absolute;
+  border: 1px solid #000000;
+  height: 100%;
+  width:25%;
+  top:0px;
+  right:0px;
+}
+#labels{
+  position:absolute;
+  border: 1px solid #000000;
+  height: 100%;
+  width:25%;
+  top:0px;
+  left:0px;
+}
+input[type=text]{
+  background: #f1f1f1;
+  border: 3px solid #C446C8;
+}
+input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+  }
