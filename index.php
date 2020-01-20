@@ -2,30 +2,38 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Опрос</title>
-    <link rel="stylesheet" href="/styles/firstStyles.css">
+    <link rel="stylesheet" href="styles/firstStyles.css">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|IBM+Plex+Serif&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   </head>
   <body>
-    <div id="back"></div>
       <div id="content">
         <div id="regblock">
-          <form method="POST" action="RegHandler.php">
-            <h3>Укажите ваши персональные данные</h3>
+          <form method="POST" action="RegistrationHandler.php">
+            <h3>Регистрация</h3><hr>
             <div id="blockcontent">
-              <div id=labels>
-                <label for="name">Имя</label><br>
-                <label for="surname">Фамилия</label><br>
-                <label for="email">Email</label><br>
+              <div class="regrow">
+                <label class="textfieldlabel" for="name">Имя:</label><br>
+                <input class="textfield" required type="text" name="name"><br>
               </div>
-              <div id="textfields">
-                <input type="text" name="surname"><br>
-                <input type="text" name="name"><br>
-                <input type="text" name="email"><br>
+              <div class="regrow">
+                <label class="textfieldlabel" for="surname" pattern:"^[А-Яа-яЁё]+$">Фамилия:</label><br>
+                <input class="textfield" required type="text" name="surname"
+                 patterm:"^[А-Яа-яЁё]+$"><br>
+              </div>
+              <div class="regrow">
+                <label class="textfieldlabel" for="email">Email:</label><br>
+                <input class="textfield" required
+                 type="text" name="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"><br>
+              </div>
+               <div class="regrow">
+                   <input type="submit" value="Завершить">
+                 </div>
               </div>
             </div>
           </form>
         </div>
-      </div>
   </body>
 </html>

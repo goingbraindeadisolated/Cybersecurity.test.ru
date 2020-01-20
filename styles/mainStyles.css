@@ -1,68 +1,44 @@
 
 body{
-  background:#FEE0FF;
+  background:#FFEDE6;
   padding: 0;
   margin: 0;
 }
 #checkbox{
   margin-bottom:10px;
   font-size: 14pt;
-  font-family: 'IBM Plex Serif', serif;
-
+  font-family: 'Didact Gothic', sans-serif;
 }
 .question{
   text-align:center;
   font-size: 18pt;
-font-family: 'IBM Plex Serif', serif;
-}
-#headblock{
-  position:absolute;
-  bottom:0;
-  z-index:2;
-  right:5%;
-  left:5%;
-  padding: 10px 50px 10px 50px;
-  background: #ffffff;
-  border-radius: 7px 7px 0 0;
-  font-size: 26px;
   font-family: 'Didact Gothic', sans-serif;
-  font-weight: 700;
-  text-align: center;
 }
 #content{
-  position: absolute;
-  left: 5%;
-  width:90%;
-  top:110px;
-  /* border: 1px solid #505050; */
+  background: #ffffff;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  padding: 1px 50px 50px 50px;
 }
 .block{
-  position:static;
-  padding: 1px 50px 50px 50px;
+  margin-top: 50px;
   background: #ffffff;
-  border-radius: 7px;
-  border-bottom: 1px solid #98309C;
 }
-#back{
-  position:fixed;
-  left:0;
-  top:0;z-index:1;
-  width:100%;
-  height: 100px;
-  background:#C446C8;
-  border-bottom: 3px solid #98309C;
+input[type=submit]{
+  margin-left: 45%;
+  border-radius: 0px;
+  border: 0;
+  background: #806459;
+  padding:10px 15px 10px 15px;
+  color:#ffffff;
 }
-#sumbitButton {
-  position:relative;
-  bottom:5px;
-  left:40px;
-  display: inline-block; /* Строчно-блочный элемент */
-  background: #98309C; /* Серый цвет фона */
-  color: #ffffff; /* Белый цвет текста */
-  padding: 1rem 1.5rem; /* Поля вокруг текста */
-  text-decoration: none; /* Убираем подчёркивание */
-  /* border-radius: 1px;
-  box-shadow:2px 2px 5px -2px; */
-  border: 3px solid #98309C;
-  float: right;
+@media screen and (max-width:600px) {
+  #content{
+    width:250px;
+  }
+  .question{
+    text-align: left;
+  }
 }
