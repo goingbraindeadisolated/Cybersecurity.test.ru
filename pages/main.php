@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -15,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|IBM+Plex+Serif&display=swap" rel="stylesheet">
   </head>
   <body>
-    <form id="content" method="POST" action="handler.php">
+    <form id="content" method="POST" action="../includes/handler.php">
         <div class="block">
         <p class="question"><?php echo $questions[question1]; ?></p>
             <input type="radio" name="answerOnQuestion1" value="1" id="checkbox" required><?php echo $answers[question1][answer1]; ?><br>
@@ -110,7 +109,7 @@
         <p class="question"><?php echo $questions[question16]; ?></p>
             <input type="radio" name="answerOnQuestion16" value="1" id="checkbox" required><?php echo $answers[question16][answer1]; ?><br>
             <input type="radio" name="answerOnQuestion16" value="2" id="checkbox" required><?php echo $answers[question16][answer2]; ?><br>
-            <input type="submit">
+            <input type="submit" value="Завершить опрос">
         </div>
     </form>
   </body>
