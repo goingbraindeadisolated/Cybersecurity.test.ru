@@ -1,0 +1,44 @@
+
+body{
+  background:#FFEDE6;
+  padding: 0;
+  margin: 0;
+}
+#checkbox{
+  margin-bottom:10px;
+  font-size: 14pt;
+  font-family: 'Didact Gothic', sans-serif;
+}
+.question{
+  text-align:center;
+  font-size: 18pt;
+  font-family: 'Didact Gothic', sans-serif;
+}
+#content{
+  background: #ffffff;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  padding: 1px 50px 50px 50px;
+}
+.block{
+  margin-top: 50px;
+  background: #ffffff;
+}
+input[type=submit]{
+  margin-left: 36%;
+  border-radius: 0px;
+  border: 0;
+  background: #806459;
+  padding:10px 15px 10px 15px;
+  color:#ffffff;
+}
+@media screen and (max-width:600px) {
+  #content{
+    width:250px;
+  }
+  .question{
+    text-align: left;
+  }
+}
